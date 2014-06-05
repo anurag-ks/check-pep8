@@ -14,8 +14,8 @@ The code is written in Python 3.
 </ul>
 
 <h2>Installation</h2><br>
-<ul>
-    <li>Still to come.
-</ul>
+<p>
+    To install this plugin you can simply clone the repo into your <b>Packages</b> directory, or, you can just download the <b>check-pep8.sublime-package</b> file and move it to your <b>Installed Packages</b> directory.
+</p>
 ----
 <b>Note</b>: It is still under construction.
