@@ -8,11 +8,12 @@ class Pep8Command(sublime_plugin.TextCommand):
     """pep8 command"""
     def run(self, view):
         if self.view.is_dirty():
-            print("Please save the file")
+            sublime.message_dialog("Please save the file")
         else:
             filename = self.view.file_name()
             if filename is None:
-                print('Wirte some code, save it and then run this command')
+                sublime.message_dialog('Wirte some code, save it and then run \
+                    this command')
                 return
             name, ext = os.path.splitext(filename)
             if ext == ".py":
@@ -22,10 +23,10 @@ class Pep8Command(sublime_plugin.TextCommand):
                     (output, _) = p.communicate()
                     output = output.decode('utf-8')
                     if output == "" or output is None:
-                        print('No pep8 errors found.')
+                        sublime.message_dialog('No pep8 errors found.')
                     else:
-                        print(output)
+                        sublime.message_dialog(output)
                 except subprocess.CalledProcessError as e:
-                    print(str(e.output))
+                    sublime.message_dialog(str(e.output))
             else:
-                print("This is not a Python file")
+                sublime.message_dialog("This is not a Python file")
