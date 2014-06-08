@@ -1,5 +1,5 @@
 [
     {
-        "keys": ["ctrl+p+8"], "command": "pep8"
+        "keys": ["alt+p+8"], "command": "pep8"
     }
 ]
