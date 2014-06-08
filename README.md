@@ -17,5 +17,9 @@ The code is written in Python 3.
 <p>
     To install this plugin you can simply clone the repo into your <b>Packages</b> directory, or, you can just download the <b><a href='https://github.com/Anurag-Ans/check-pep8/releases/tag/v1.0-beta'>check-pep8.sublime-package</a></b> file and move it to your <b>Installed Packages</b> directory.
 </p>
-----
-<b>Note</b>: It is still under construction.
+<hr />
+<h2>Usage :</h2>
+<p>
+    <b>For Windows and Linux - </b> press "alt+p+8"<br>
+    <b>For OSX - </b> press "super+p+8"<br>
+</p>
